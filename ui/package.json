@@ -1,0 +1,23 @@
+{
+  "name": "ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "rm -rf dist/* && parcel './src/**/*.html'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist/* && parcel build './src/**/*.html'"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.2",
+    "prettier": "^1.16.4",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "vue": "^2.6.9",
+    "vuetify": "^1.5.6",
+    "wijmo": "^5.20183.568"
+  },
+  "alias": {
+    "vue": "./node_modules/vue/dist/vue.common.js"
+  }
+}

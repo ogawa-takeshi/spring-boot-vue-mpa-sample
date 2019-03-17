@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wijmo Sample</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    </head>
+    <body>
+        <div id="app">
+            <v-app>
+                <v-container grid-list-md text-xs-center>
+                    <wj-flex-grid :items-source="gridData">
+                        <wj-flex-grid-column header="ID" binding="id" :width="60"></wj-flex-grid-column>
+                        <wj-flex-grid-column header="商品名" binding="product" :width="200"></wj-flex-grid-column>
+                        <wj-flex-grid-column header="受注日" binding="date" :width="120"></wj-flex-grid-column>
+                        <wj-flex-grid-column header="金額" binding="amount" :width="100" format="c"></wj-flex-grid-column>
+                    </wj-flex-grid>
+                </v-container>
+            </v-app>
+        </div>
+        <script src="index.ts"></script>
+    </body>
+</html>
